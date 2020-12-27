@@ -2,16 +2,16 @@
 h2 {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.4;
   margin-bottom: 0.7rem;
   margin-top: 0;
 
   @include media(m) {
-    font-size: 19px;
+    font-size: 18px;
     padding-bottom: 0;
   }
   @include media(l) {
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 0;
   }
 
@@ -26,10 +26,10 @@ h3 {
   margin-bottom: 0.2rem;
 
   @include media(m) {
-    font-size: 14px;
+    font-size: 13px;
   }
   @include media(l) {
-    font-size: 16px;
+    font-size: 14px;
   }
 
 }
@@ -38,4 +38,5 @@ h3 {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
