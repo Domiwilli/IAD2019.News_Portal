@@ -1,0 +1,41 @@
+
+h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0.7rem;
+  margin-top: 0;
+
+  @include media(m) {
+    font-size: 19px;
+    padding-bottom: 0;
+  }
+  @include media(l) {
+    font-size: 22px;
+    padding-bottom: 0;
+  }
+
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: #41C2E8;
+  margin-bottom: 0.2rem;
+
+  @include media(m) {
+    font-size: 14px;
+  }
+  @include media(l) {
+    font-size: 16px;
+  }
+
+}
+
+.erscheinung {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+}

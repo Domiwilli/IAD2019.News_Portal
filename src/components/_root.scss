@@ -1,0 +1,25 @@
+// Globale Definition for HTML-Tag
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+// or :root {}
+html {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  @include media(m) {
+    font-size: 18px;
+  }
+  @include media(l) {
+    font-size: 20px;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
