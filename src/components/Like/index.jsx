@@ -7,7 +7,7 @@ const Like = ({ start }) => {
   return (
     <div className="like">
       <button className="like__btn" onClick={() => setCount(count + 1)}>
-        {count} – Like
+        {count}&#8194;<img class="iconsmall" src="./assets/images/Icon_like.png"/>
       </button>
     </div>
   );

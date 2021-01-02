@@ -1,4 +1,4 @@
-// 12er Column-Grid
+// 14er Column-Grid
 .grid-14 {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
@@ -24,7 +24,7 @@ div[class^="card-"] {
   }
 }
 
-.column-12 {
+.column-14 {
   grid-column: span 14;
 }
 
@@ -60,12 +60,11 @@ div[class^="card-"] {
   }
 }
 
-.column-5to12 {
+.rubrik {
   grid-column-start: 2;
-  grid-column-end: span 14;
+  grid-column-end: span 12;
   @include media(m) {
-    grid-column-start: 5;
-    grid-column-end: span 9;
+
   }
 }
 
