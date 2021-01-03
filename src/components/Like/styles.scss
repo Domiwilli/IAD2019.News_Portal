@@ -1,8 +1,24 @@
+#wrapper {
+  display: block;
+  overflow: hidden;
+}
+
+.erscheinung {
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  float: left;
+  margin: 0;
+
+}
+
 .like__btn {
   color: inherit;
   border: 0;
   box-shadow: none;
-  background-color: #dddddd;
+  background: transparent;
   text-shadow: none;
   margin: 0;
   padding: 0;
@@ -11,8 +27,17 @@
   font-size: inherit;
   font-family: inherit;
   text-align: right;
+  float: right;
+  overflow: hidden;
+
 
   &:focus {
     outline: 0 !important;
   }
+}
+
+.like {
+  float: right;
+  width: 60px;
+  height: 30px;
 }
