@@ -68,26 +68,58 @@ div[class^="card-"] {
   }
 }
 
-// // 12er × 12er Grid
-// .grid-12-6 {
-//   grid-auto-flow: dense;
-//
-//   display: grid;
-//   grid-template-columns: repeat(12, 1fr);
-//   grid-column-gap: 0.5rem;
-//   grid-template-rows: repeat(6, 1fr);
-//   grid-row-gap: 0.5rem;
-//   height: 20rem;
-// }
-//
-// .card-2-4 {
-//   grid-column: span 2;
-//   grid-row: span 4;
-//   background-color: grey;
-// }
-//
-// .card-4-2 {
-//   grid-column: span 4;
-//   grid-row: span 2;
-//   background-color: grey;
-// }
+//Covid-19 grid
+
+div[class^="column-"],
+div[class^="card-"] {
+  @include debug() {
+    background-color: rgba(255, 255, 0, 0.3);
+    border: 1px solid rgba(255, 0, 0, 0.8);
+    min-height: 3rem;
+  }
+}
+.grid-14-covid {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-column-gap: 1%;
+}
+
+.column-1-covid {
+  grid-column-start: 1;
+  grid-column: span 1;
+  @include media(m) {
+
+  }
+}
+
+.column-2-covid {
+  grid-column-start: 2;
+  grid-column: span 3;
+  @include media(m) {
+
+  }
+}
+
+.column-3-covid {
+  grid-column-start: 4;
+  grid-column: span 3;
+  @include media(m) {
+
+  }
+}
+
+.column-4-covid {
+  grid-column-start: 6;
+  grid-column: span 3;
+  @include media(m) {
+
+  }
+}
+
+.column-5-covid {
+  grid-column-start: 8;
+  grid-column: span 3;
+  @include media(m) {
+
+  }
+}
