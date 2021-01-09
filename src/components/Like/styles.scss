@@ -1,7 +1,30 @@
-#wrapper {
-  display: block;
-  overflow: hidden;
+$anthrazit: #2B2E34;
+$grey: #A5ACAD;
+$lightgrey: #D0D7D9;
+
+.like__wrapper {
+  display: flex;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: $grey;
 }
+
+.like__erscheinung {
+  width: 30%;
+  flex-grow: 1;
+}
+
+.like__button {
+  width: 5rem;
+  flex-grow: 0;
+}
+
+strong {
+  font-weight: 500;
+  color: $anthrazit;
+}
+
 
 .erscheinung {
   display: flex;

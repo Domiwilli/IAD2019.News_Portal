@@ -4,6 +4,11 @@
 // for media-query
 @import "./helpers/media/mixin";
 
+// colors
+$anthrazit: #2B2E34;
+$grey: #A5ACAD;
+$lightgrey: #D0D7D9;
+
 // components
 @import "./components/Debug/mixin";
 @import "./components/_root";
