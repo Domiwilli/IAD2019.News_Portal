@@ -13,11 +13,13 @@ $lightgrey: #D0D7D9;
 .like__erscheinung {
   width: 30%;
   flex-grow: 1;
+  letter-spacing: 0.05em;
 }
 
 .like__button {
   width: 5rem;
   flex-grow: 0;
+  bottom: 1rem;
 }
 
 strong {
