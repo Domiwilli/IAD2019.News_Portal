@@ -8,6 +8,7 @@
 $anthrazit: #2B2E34;
 $grey: #A5ACAD;
 $lightgrey: #D0D7D9;
+$blue: #41C2E8;
 
 // components
 @import "./components/Debug/mixin";
@@ -23,3 +24,4 @@ $lightgrey: #D0D7D9;
 @import "./components/Menu/styles";
 @import "./components/test";
 @import "./components/fonts";
+@import "./components/kolumne";

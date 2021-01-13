@@ -1,13 +1,21 @@
 $anthrazit: #2B2E34;
 $grey: #A5ACAD;
 $lightgrey: #D0D7D9;
+$blue: #41C2E8;
 
 .like__wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: flex;
+  position: relative;
   font-weight: 400;
   font-size: 11px;
   text-transform: uppercase;
   color: $grey;
+  bottom: 0;
+  align-self: flex-end;
+  margin: 0;
 }
 
 .like__erscheinung {
@@ -16,11 +24,21 @@ $lightgrey: #D0D7D9;
   letter-spacing: 0.05em;
 }
 
+.like__kolumne {
+  width: 30%;
+  flex-grow: 1;
+  letter-spacing: 0.05em;
+  color: white;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
 .like__button {
-  width: 5rem;
+  width: 3rem;
   flex-grow: 0;
   bottom: 1rem;
 }
+
 
 strong {
   font-weight: 500;
@@ -46,7 +64,6 @@ strong {
   background: transparent;
   text-shadow: none;
   margin: 0;
-  padding: 0;
   cursor: pointer;
   line-height: inherit;
   font-size: inherit;
