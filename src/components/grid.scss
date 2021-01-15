@@ -1,4 +1,4 @@
-// 14er Column-Grid
+// News grid
 .grid-14 {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
@@ -201,6 +201,8 @@ div[class^="card-"] {
   }
 }
 
+// Design grid
+
 div[class^="column-"],
 div[class^="card-"] {
   @include debug() {
@@ -213,7 +215,7 @@ div[class^="card-"] {
 .grid-14-design {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: 1fr 0.5fr 0.1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.1fr 0.8fr;
   column-gap: 2%;
 }
 
@@ -290,6 +292,8 @@ div[class^="card-"] {
   }
 }
 
+// Wetter, Wettbewerb & Newsletter
+
 .column-9-design {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
@@ -299,38 +303,115 @@ div[class^="card-"] {
 }
 
 .column-10-design {
+  display: grid;
   grid-column: 2 / 6;
   grid-row: 4 / 5;
   background-color: $anthrazit;
-  height: 10rem;
+  height: 12rem;
+  align-content: center;
+
   @include media(m) {
 
   }
 }
 
 .column-11-design {
+  display: grid;
   grid-column: 6 / 10;
   grid-row: 4 / 5;
   background-color: $blue;
-  height: 10rem;
+  height: 12rem;
+  align-content: center;
+
   @include media(m) {
 
   }
+}
+
+.column-11-design:hover {
+  background-color: $anthrazit;
 }
 
 .column-12-design {
+  display: grid;
   grid-column: 10 / 14;
   grid-row: 4 / 5;
   background-color: $grey;
-  height: 10rem;
+  height: 12rem;
+  align-content: center;
+
   @include media(m) {
 
   }
 }
+
+.column-12-design:hover {
+  background-color: $anthrazit;
+}
+
 
 .column-13-design {
   grid-column: 14 / 15;
   grid-row: 4 / 5;
+  @include media(m) {
+
+  }
+}
+
+// Meistgelesen grid
+
+div[class^="column-"],
+div[class^="card-"] {
+  @include debug() {
+    background-color: rgba(255, 255, 0, 0.3);
+    border: 1px solid rgba(255, 0, 0, 0.8);
+    // min-height: 3rem;
+  }
+}
+
+.grid-14-meist {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 2%;
+}
+
+
+.column-1-meist {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  @include media(m) {
+
+  }
+}
+
+.column-2-meist {
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+  @include media(m) {
+
+  }
+}
+
+.column-3-meist {
+  grid-column: 5 / 8;
+  grid-row: 1 / 2;
+  @include media(m) {
+
+  }
+}
+
+.column-4-meist {
+  grid-column: 8 / 11;
+  grid-row: 1 / 2;
+  @include media(m) {
+
+  }
+}
+
+.column-5-meist {
+  grid-column: 11 / 15;
+  grid-row: 1 / 2;
   @include media(m) {
 
   }
