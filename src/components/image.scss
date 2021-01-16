@@ -22,3 +22,37 @@ img.wetter {
   margin-right: auto;
   width: 15%;
 }
+
+img.Logo {
+  flex-grow: 0;
+  float: left;
+  width: 5rem;
+  height: 70%;
+  margin-left: 10rem;
+  padding-top: 10px;
+}
+
+img.headerwetter {
+  flex-grow: 0;
+  float: left;
+  width: 5rem;
+  height: 70%;
+  padding-top: 10px;
+}
+
+img.profile {
+  flex-grow: 0;
+  float: right;
+  width: 3rem;
+  height: 70%;
+  margin-right: 10rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+img.footer {
+  width: 7rem;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
