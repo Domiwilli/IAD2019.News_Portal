@@ -5,7 +5,6 @@
     grid-template-columns: repeat(14, 1fr);
     grid-template-rows: 1fr 1fr 0.2fr;
     column-gap: 2%;
-    position: relative;
   }
 
   .footer-1 {
@@ -43,24 +42,21 @@
     }
   }
 
-  a.footer__item--active,
-  a.footer:hover {
+  .footer__item--active,
+  .footer:hover {
     color: $anthrazit;
   }
-  a.footer:hover {
+  .footer:hover {
     border-color: $blue;
   }
-  a.footer__item--active {
+  .footer__item--active {
     border-color: $blue;
   }
-  a.footer:visited {
+  .footer:visited {
     color: $anthrazit;
   }
   /* column */
 
-
-
-  
 
   .footer__inner {
     overflow-x: auto;

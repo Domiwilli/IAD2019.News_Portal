@@ -33,7 +33,7 @@ img.Logo {
 }
 
 img.headerwetter {
-  flex-grow: 0;
+  position: relative;
   float: left;
   width: 5rem;
   height: 70%;
@@ -41,13 +41,13 @@ img.headerwetter {
 }
 
 img.profile {
-  flex-grow: 0;
+  position: relative;
   float: right;
   width: 3rem;
   height: 70%;
-  margin-right: 10rem;
   margin-top: 0;
   margin-bottom: 1rem;
+  margin-right: 0;
 }
 
 img.footer {

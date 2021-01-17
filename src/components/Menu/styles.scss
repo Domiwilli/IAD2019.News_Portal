@@ -29,25 +29,7 @@ a:visited {
 
 /* compensate for header */
 .container--first-content {
-  margin-top: 10rem;
-}
-
-/* Logo, weather & profile */
-.headeroben {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background-color: $anthrazit;
-  height: 3rem;
-  z-index: 99;
-  margin-bottom: 1px;
-}
-
-/* center the navigation in height */
-.headeroben--nav {
-  height: 100%;
-  display: flex;
-  align-items: center;
+  margin-top: 5rem;
 }
 
 /* header doesn't scroll */
@@ -121,18 +103,38 @@ a:visited {
   margin-left: 3em;
 }
 
+/* Logo, weather & profile */
+.headeroben {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: $anthrazit;
+  height: 2.5rem;
+  z-index: 99;
+  margin-bottom: 1px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
 .login {
+  display: flex;
   font-weight: 400;
   font-size: 13px;
   text-align: right;
   letter-spacing: 0.1em;
   color: white;
+  float: right;
+  margin-right: 0;
 }
 
 .headerwettertext {
+  display: flex;
   font-weight: 400;
   font-size: 13px;
   text-align: left;
   letter-spacing: 0.1em;
   color: white;
+  float: left;
+  margin-left: 0;
 }
