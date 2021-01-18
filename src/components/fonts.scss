@@ -61,6 +61,7 @@ h3 {
   line-height: 1.6;
   text-transform: uppercase;
   color: $blue;
+  margin-top: 0;
   margin-bottom: 0.2rem;
 
   @include media(m) {
@@ -80,6 +81,7 @@ h3.klein {
   text-transform: uppercase;
   color: #41C2E8;
   margin-bottom: 0.2rem;
+  margin-top: 0;
 
   @include media(m) {
     font-size: 11px;
