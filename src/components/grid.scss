@@ -170,6 +170,13 @@ div[class^="card-"] {
   }
 }
 
+.rubrik {
+  grid-column: 2 / 14;
+  @include media(l) {
+    grid-column: 2 / 14;
+  }
+}
+
 //Covid-19 grid
 
 div[class^="column-"],
