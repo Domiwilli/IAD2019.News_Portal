@@ -126,7 +126,7 @@ div[class^="card-"] {
   grid-column: 2 / 14;
   grid-row: 1 / 2;
   @include media(l) {
-    grid-column: 2 / 14;
+    grid-column: 2 / 9;
     grid-row: 1 / 2;
   }
 }
@@ -139,6 +139,27 @@ div[class^="card-"] {
     grid-row: 1 / 2;
   }
 }
+
+.teaser {
+  display: flex; // flexbox schiebt die elemente nebeneinander
+  justify-content: space-between; // restlicher space zwischen img und text
+  @include media(l) {
+    display: grid;
+  }
+}
+.teaser__image {
+  width: 30%;
+  @include media(l) {
+    width: 100%;
+  }
+}
+.teaser__text {
+  width: 60%;
+  @include media(l) {
+    width: 100%;
+  }
+}
+
 
 .column-4 {
   grid-column: 2 / 14;
@@ -337,7 +358,7 @@ div[class^="card-"] {
 }
 
 .column-2-design {
-  grid-column: 2 / 8;
+  grid-column: 2 / 14;
   grid-row: 1 / 2;
   @include media(l) {
     grid-column: 2 / 8;
@@ -346,8 +367,8 @@ div[class^="card-"] {
 }
 
 .column-3-design {
-  grid-column: 8 / 11;
-  grid-row: 1 / 2;
+  grid-column: 2 / 14;
+  grid-row: 2 / 3;
   @include media(l) {
     grid-column: 8 / 11;
     grid-row: 1 / 2;
@@ -355,8 +376,8 @@ div[class^="card-"] {
 }
 
 .column-4-design {
-  grid-column: 11 / 14;
-  grid-row: 1 / 2;
+  grid-column: 2 / 14;
+  grid-row: 3 / 4;
   background-color: $blue;
   @include media(l) {
     grid-column: 11 / 14;
@@ -367,7 +388,7 @@ div[class^="card-"] {
 
 .column-5-design {
   grid-column: 14 / 15;
-  grid-row: 1 / 2;
+  grid-row: 3 / 4;
   @include media(l) {
     grid-column: 14 / 15;
     grid-row: 1 / 2;
@@ -376,7 +397,7 @@ div[class^="card-"] {
 
 .column-6-design {
   grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-row: 4 / 5;
   @include media(l) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -385,7 +406,7 @@ div[class^="card-"] {
 
 .column-7-design {
   grid-column: 2 / 14;
-  grid-row: 2 / 3;
+  grid-row: 4 / 5;
   @include media(l) {
     grid-column: 2 / 14;
     grid-row: 2 / 3;
@@ -394,7 +415,7 @@ div[class^="card-"] {
 
 .column-8-design {
   grid-column: 14 / 15;
-  grid-row: 2 / 3;
+  grid-row: 4 / 5;
   @include media(l) {
     grid-column: 14 / 15;
     grid-row: 2 / 3;
@@ -405,7 +426,7 @@ div[class^="card-"] {
 
 .column-9-design {
   grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  grid-row: 5 / 6;
   @include media(l) {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
@@ -414,8 +435,8 @@ div[class^="card-"] {
 
 .column-10-design {
   display: grid;
-  grid-column: 2 / 6;
-  grid-row: 3 / 4;
+  grid-column: 2 / 14;
+  grid-row: 5 / 6;
   background-color: $anthrazit;
   height: 12rem;
   align-content: center;
@@ -432,8 +453,8 @@ div[class^="card-"] {
 
 .column-11-design {
   display: grid;
-  grid-column: 6 / 10;
-  grid-row: 3 / 4;
+  grid-column: 2 / 14;
+  grid-row: 6 / 7;
   background-color: $blue;
   height: 12rem;
   align-content: center;
@@ -454,8 +475,8 @@ div[class^="card-"] {
 
 .column-12-design {
   display: grid;
-  grid-column: 10 / 14;
-  grid-row: 3 / 4;
+  grid-column: 2 / 14;
+  grid-row: 7 / 8;
   background-color: $grey;
   height: 12rem;
   align-content: center;
@@ -477,7 +498,7 @@ div[class^="card-"] {
 
 .column-13-design {
   grid-column: 14 / 15;
-  grid-row: 3 / 4;
+  grid-row: 7 / 8;
   @include media(l) {
     grid-column: 14 / 15;
     grid-row: 3 / 4;
