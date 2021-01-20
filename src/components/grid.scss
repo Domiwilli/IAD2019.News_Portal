@@ -112,13 +112,34 @@ div[class^="card-"] {
 }
 
 .column-3 {
-  grid-column: 2 / 9;
+  grid-column: 2 / 14;
   grid-row: 2 / 3;
   @include media(l) {
     grid-column: 9 / 12;
     grid-row: 1 / 2;
   }
 }
+
+.teaser {
+  display: flex; // flexbox schiebt die elemente nebeneinander
+  justify-content: space-between; // restlicher space zwischen img und text
+  @include media(l) {
+    display: block;
+  }
+}
+.teaser__image {
+  width: 30%;
+  @include media(l) {
+    width: 100%;
+  }
+}
+.teaser__text {
+  width: 60%;
+  @include media(l) {
+    width: 100%;
+  }
+}
+
 
 .column-4 {
   grid-column: 2 / 14;
