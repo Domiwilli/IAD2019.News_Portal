@@ -6,6 +6,11 @@
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: 1fr;
   column-gap: 2%;
+  width: 100%;
+}
+
+.grid-14-rubrik--full-height {
+  height: 100%;
 }
 
 .column-1-rubrik {
@@ -18,8 +23,23 @@
   }
 }
 
-.column-2-rubrik {
+.column-14-rubrik {
   grid-column: 1 / 15;
+  grid-row: 1 / 2;
+
+  @include media(l) {
+    grid-column: 1 / 15;
+    grid-row: 1 / 2;
+  }
+}
+
+.column-14-rubrik--header {
+  position: relative;
+}
+
+
+.column-2-rubrik {
+  grid-column: 2 / 14;
   grid-row: 1 / 2;
 
   @include media(l) {
