@@ -35,7 +35,7 @@ a:visited {
 /* header doesn't scroll */
 .header {
   position: sticky;
-  top: 0;
+  top: calc(8% + 1px); // space top
   width: 100%;
   background-color: $anthrazit;
   height: 3rem;
@@ -47,6 +47,7 @@ a:visited {
   height: 100%;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 
 /* whole heigth */
@@ -110,7 +111,7 @@ a:visited {
   background-color: $anthrazit;
   height: 2.5rem;
   z-index: 99;
-  margin-bottom: 1px;
+  border-bottom: white 1px solid; // white line otherwise you see the background
   height: 8%;
   display: flex;
   align-items: center;
@@ -124,9 +125,9 @@ a:visited {
   display: inline-block;
   position: absolute;
   margin-top: 0.8rem;
-  margin-right: 6rem;
+  margin-right: 0;
   top: 0;
-  right: 0;
+  right: 1rem;
 }
 
 .login {
@@ -137,7 +138,7 @@ a:visited {
   color: white;
   position: absolute;
   margin-top: 1rem;
-  margin-right: 8rem;
+  margin-right: 3rem;
   top: 0;
   right: 0;
 }
