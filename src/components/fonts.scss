@@ -149,3 +149,18 @@ h4.kolumne {
   padding-left: 5px;
   padding-right: 5px;
 }
+
+#mobile-text {
+  display: block;
+}
+#desktop-text {
+  display: none;
+}
+@include media(l) {
+#mobile-text {
+  display: none;
+}
+#desktop-text {
+  display: block;
+ }
+}

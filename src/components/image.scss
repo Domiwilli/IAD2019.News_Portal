@@ -63,3 +63,18 @@ img.footer {
 img.werbung {
   margin-bottom: 0;
 }
+
+.mobile-image {
+  display: block;
+}
+.desktop-image {
+  display: none;
+}
+@include media(l) {
+.mobile-image {
+  display: none;
+}
+.desktop-image {
+  display: block;
+ }
+}
