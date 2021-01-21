@@ -163,11 +163,13 @@ div[class^="card-"] {
 
 
 .column-4 {
-  grid-column: 1 / 15;
+  grid-column: 2 / 14;
   grid-row: 4 / 5;
+  margin-top: 1.5rem;
   @include media(l) {
     grid-column: 12 / 15;
     grid-row: 1 / 2;
+    margin-top: 0;
   }
 }
 
@@ -325,7 +327,7 @@ div[class^="card-"] {
 }
 
 .column-15-covid {
-  grid-column: 1 / 15;
+  grid-column: 2 / 14;
   grid-row: 9 / 10;
   @include media(l) {
     grid-column: 1 / 8;
@@ -384,10 +386,12 @@ div[class^="card-"] {
   grid-column: 1 / 15;
   grid-row: 3 / 4;
   background-color: $blue;
+  height: 7.5rem;
   @include media(l) {
     grid-column: 11 / 14;
     grid-row: 1 / 2;
     background-color: $blue;
+    height: 100%;
   }
 }
 
@@ -532,7 +536,10 @@ div[class^="card-"] {
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: 1fr;
   column-gap: 2%;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
+  @include media(l) {
+    margin-bottom: 5rem;
+  }
 }
 
 
@@ -573,11 +580,13 @@ div[class^="card-"] {
 }
 
 .column-5-meist {
-  grid-column: 1 / 15;
+  grid-column: 2 / 14;
   grid-row: 3 / 4;
+  margin-top: 1.5rem;
   @include media(l) {
     grid-column: 11 / 15;
     grid-row: 1 / 2;
+    margin-top: 0;
   }
 }
 

@@ -40,6 +40,16 @@ a:visited {
   background-color: $anthrazit;
   height: 3rem;
   z-index: 99;
+  margin-bottom: 0;
+  @include media(l) {
+    position: sticky;
+    top: calc(8% + 1px); // space top
+    width: 100%;
+    background-color: $anthrazit;
+    height: 3rem;
+    z-index: 99;
+    margin-bottom: 2rem;
+    }
 }
 
 /* center the navigation in height */

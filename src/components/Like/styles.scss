@@ -35,8 +35,17 @@ $blue: #41C2E8;
   flex-grow: 1;
   letter-spacing: 0.05em;
   color: white;
-  padding-left: 0.8rem;
+  padding-left: 0;
   padding-right: 0.8rem;
+
+  @include media(l) {
+    width: 30%;
+    flex-grow: 1;
+    letter-spacing: 0.05em;
+    color: white;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
 }
 
 .like__button {
