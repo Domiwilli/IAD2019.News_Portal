@@ -2,6 +2,8 @@
 h2 {
   font-weight: 600;
   font-size: 16px;
+  color: black;
+  text-decoration: none;
   line-height: 1.4;
   margin-bottom: 0.7rem;
   margin-top: 0;
@@ -9,11 +11,20 @@ h2 {
   @include media(m) {
     font-size: 18px;
     padding-bottom: 0;
+    color: black;
+    text-decoration: none;
   }
   @include media(l) {
     font-size: 25px;
     padding-bottom: 0;
+    color: black;
+    text-decoration: none;
   }
+}
+
+h2:hover {
+  color: black;
+  text-decoration: underline;
 }
 
 h2.klein {
@@ -70,8 +81,8 @@ h3 {
   @include media(l) {
     font-size: 13px;
   }
-
 }
+
 
 h3.klein {
   font-weight: 400;
@@ -111,12 +122,12 @@ h3.wetter {
 }
 
 h4 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #41C2E8;
-  background-color: #2B2E34;
+  color: $blue;
+  background-color: $anthrazit;
   float: left;
   clear: left;
   padding-left: 5px;
