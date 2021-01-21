@@ -7,8 +7,8 @@ h2 {
   line-height: 1.4;
   margin-bottom: 0.7rem;
   margin-top: 0;
-  margin-left: 1.2rem;
-  margin-right: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
   @include media(m) {
     font-size: 18px;
@@ -38,8 +38,8 @@ h2.klein {
   line-height: 1.4;
   margin-bottom: 0.7rem;
   margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
   @include media(m) {
     font-size: 16px;
@@ -48,6 +48,8 @@ h2.klein {
   @include media(l) {
     font-size: 18px;
     padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -79,16 +81,17 @@ h3 {
   line-height: 1.6;
   text-transform: uppercase;
   color: $blue;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 0.2rem;
-  margin-left: 1.2rem;
-  margin-right: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
   @include media(m) {
     font-size: 12px;
   }
   @include media(l) {
     font-size: 13px;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
   }
@@ -104,14 +107,16 @@ h3.klein {
   color: #41C2E8;
   margin-bottom: 0.2rem;
   margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
   @include media(m) {
     font-size: 11px;
   }
   @include media(l) {
     font-size: 12px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

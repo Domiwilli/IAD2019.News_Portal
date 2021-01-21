@@ -64,6 +64,7 @@
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: 1fr;
   column-gap: 2%;
+  padding-top: 1rem;
 }
 
 .row-1-between {
@@ -148,7 +149,7 @@ div[class^="card-"] {
   }
 }
 .teaser__image {
-  width: 45%;
+  width: 50%;
   @include media(l) {
     width: 100%;
   }
@@ -172,8 +173,10 @@ div[class^="card-"] {
 
 .rubrik {
   grid-column: 2 / 14;
+  margin-top: 1.5rem;
   @include media(l) {
     grid-column: 2 / 14;
+    margin-top: 1.5rem;
   }
 }
 
@@ -342,10 +345,10 @@ div[class^="card-"] {
 }
 
 .grid-14-design {
-  display: grid;
-  grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: 1fr 0.1fr 0.5fr;
-  column-gap: 2%;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: 1fr 0.1fr 0.5fr;
+    column-gap: 2%;
 }
 
 .column-1-design {
@@ -440,8 +443,9 @@ div[class^="card-"] {
   grid-column: 2 / 14;
   grid-row: 5 / 6;
   background-color: $anthrazit;
-  height: 12rem;
+  height: 8rem;
   align-content: center;
+  margin-bottom: 1rem;
 
   @include media(l) {
     display: grid;
@@ -450,6 +454,7 @@ div[class^="card-"] {
     background-color: $anthrazit;
     height: 12rem;
     align-content: center;
+    margin-bottom: 0;
   }
 }
 
@@ -458,8 +463,9 @@ div[class^="card-"] {
   grid-column: 2 / 14;
   grid-row: 6 / 7;
   background-color: $blue;
-  height: 12rem;
+  height: 8rem;
   align-content: center;
+  margin-bottom: 1rem;
 
   @include media(l) {
     display: grid;
@@ -468,6 +474,7 @@ div[class^="card-"] {
     background-color: $blue;
     height: 12rem;
     align-content: center;
+    margin-bottom: 0;
   }
 }
 
@@ -480,8 +487,9 @@ div[class^="card-"] {
   grid-column: 2 / 14;
   grid-row: 7 / 8;
   background-color: $grey;
-  height: 12rem;
+  height: 8rem;
   align-content: center;
+  margin-bottom: 0;
 
   @include media(l) {
     display: grid;
@@ -490,6 +498,7 @@ div[class^="card-"] {
     background-color: $grey;
     height: 12rem;
     align-content: center;
+    margin-bottom: 0;
   }
 }
 

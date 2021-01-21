@@ -10,11 +10,18 @@ $blue: #41C2E8;
   display: flex;
   position: relative;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 9px;
   text-transform: uppercase;
   color: $grey;
   bottom: 0;
   align-self: flex-end;
+  margin-left: 1rem;
+
+  @include media(l) {
+    margin-left: 0;
+    font-size: 11px;
+  }
+
 }
 
 .like__erscheinung {
