@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
@@ -5,16 +6,20 @@
   <title>NEWWWS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<img class="werbung" src="./assets/images/Werbung_iPhone.jpg" alt="Werbung-iPhone" />
+<div class="mobile-image">
+  <img class="werbung" src="./assets/images/Werbung_iPhone_klein.jpg" alt="iPhone Mobile" />
+</div>
+<div class="desktop-image">
+  <img class="werbung" src="./assets/images/Werbung_iPhone.jpg" alt="iPhone Desktop" />
+</div>
 <div class="headeroben headeroben-nav">
   <img class="Logo" src="./assets/images/Logo.svg" alt="NEWWWS" />
   <img class="headerwetter" src="./assets/images/weather_cs.svg" alt="Wetter" />
   <div class="headerwettertext"> 5° Bewölkt</div>
   <div class="login"> Login </div>
   <div class="dot"></div>
+</div>
 
-</div>
-</div>
 <div class="header">
   <div class="container container--nav">
     <div class="grid-14-rubrik">
@@ -52,6 +57,7 @@
 
       <div class="column-1"></div>
       <!-- News 1 – Gross -->
+
       <div class="column-2 column--line-right-big">
         <img src="./assets/images/01_News/News_1.jpg" alt="Architektur" />
         <h3> FOTOGRAFIE </h3>
@@ -247,54 +253,58 @@
       </div>
       <!-- Covid-19 7 – Klein – ohne Bild -->
       <div class="column-12-covid">
-      <div id="mobile-text">
-      </div>
-      <div id="desktop-text">
-        <h3 class="klein"> BADEN </h3>
-        <h2 class="klein"> Pflegezentrum muss wegen vielen Anste&shy;ckungen dicht machen </h2>
-        <div class="like__wrapper">
-          <div class="like__erscheinung"><strong>Muster Autor</strong> vor 3h</div>
-          <div class="like__button">
-            <div component="like" src="./assets/images/Icon_like.svg" start="58"> </div>
-          </div>
+        <div id="mobile-text">
         </div>
+        <div id="desktop-text">
+          <h3 class="klein"> BADEN </h3>
+          <h2 class="klein"> Pflegezentrum muss wegen vielen Anste&shy;ckungen dicht machen </h2>
+          <div class="like__wrapper">
+            <div class="like__erscheinung"><strong>Muster Autor</strong> vor 3h</div>
+            <div class="like__button">
+              <div component="like" src="./assets/images/Icon_like.svg" start="58"> </div>
+            </div>
+          </div>
 
-        <!-- Trennlinie -->
-        <hr class="basic" />
-        <h3 class="klein"> BRUGG </h3>
-        <h2 class="klein"> In Brugg gibt es neu ein Drive-in für Coronatests </h2>
-        <div class="like__wrapper">
-          <div class="like__erscheinung"><strong>Muster Autor</strong> vor 3h</div>
-          <div class="like__button">
-            <div component="like" src="./assets/images/Icon_like.svg" start="26"> </div>
+          <!-- Trennlinie -->
+          <hr class="basic" />
+          <h3 class="klein"> BRUGG </h3>
+          <h2 class="klein"> In Brugg gibt es neu ein Drive-in für Coronatests </h2>
+          <div class="like__wrapper">
+            <div class="like__erscheinung"><strong>Muster Autor</strong> vor 3h</div>
+            <div class="like__button">
+              <div component="like" src="./assets/images/Icon_like.svg" start="26"> </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Covid-19 8 – Gross -->
-      <div class="column-13-covid column--line-left-big">
-        <img src="./assets/images/02_Covid/Covid_5.jpg" alt="Covid-19" />
-        <h3> Corona Hotspot </h3>
-        <h2> Warum hat die Westschweiz trotz strengeren Regeln so viele Infektionen? </h2>
-        <p> Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben
-          und rumgedreht. </p>
-        <div class="like__wrapper">
-          <div class="like__erscheinung"><strong>Muster Autor</strong> vor 3h</div>
-          <div class="like__button">
-            <div component="like" src="./assets/images/Icon_like.svg" start="105"> </div>
-          </div>
-        </div>
-      </div>
-      <div class="column-14-covid">14</div>
-      <div class="column-15-covid">
-        <img src="./assets/images/02_Covid/Werbung_Nikon.jpg" alt="Adobe" /></div>
 </div>
-
-        <div class="rubrik">
-          <hr />
-          <h4> Design </h4>
+        <!-- Covid-19 8 – Gross -->
+        <div class="column-13-covid column--line-left-big">
+          <img src="./assets/images/02_Covid/Covid_5.jpg" alt="Covid-19" />
+          <h3> Corona Hotspot </h3>
+          <h2> Warum hat die Westschweiz trotz strengeren Regeln so viele Infektionen? </h2>
+          <p> Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben
+            und rumgedreht. </p>
+          <div class="like__wrapper">
+            <div class="like__erscheinung"><strong>Muster Autor</strong> vor 3h</div>
+            <div class="like__button">
+              <div component="like" src="./assets/images/Icon_like.svg" start="105"> </div>
+            </div>
+          </div>
         </div>
+        <div class="column-14-covid">14</div>
+        <div class="column-15-covid">
+          <img src="./assets/images/02_Covid/Werbung_Nikon.jpg" alt="Adobe" /></div>
       </div>
+
+      <div class="grid-14-between">
+        <div class="row-1-between"></div>
+      <div class="row-2-between">
+        <hr />
+        <h4> Design </h4>
+      </div>
+      <div class="row-3-between"></div>
+    </div>
+
 
     <!-- Design Bereich -->
     <div class="grid-14-design">
@@ -497,7 +507,7 @@
       <!-- Werbung -->
       <div class="column-5-meist">
         <div class="desktop-image">
-        <img src="./assets/images/04_Meistgelesen/Werbung_Sketch.jpg" alt="Sketch Desktop" />
+          <img src="./assets/images/04_Meistgelesen/Werbung_Sketch.jpg" alt="Sketch Desktop" />
         </div>
         <div class="mobile-image">
           <img src="./assets/images/04_Meistgelesen/Werbung_Sketch_klein.jpg" alt="Sketch Mobile" />
@@ -506,9 +516,6 @@
     </div>
   </div>
 
-
-
-  </div>
 
   <div class="footer">
     <div class="footer-1">
@@ -520,12 +527,14 @@
         <a class="footer__item" href="#b">Kontakt</a>
         <a class="footer__item" href="#c">AGB</a>
         <a class="footer__item" href="#d">Datenschutz</a>
+      </nav>
     </div>
+
     <div class="footer-3">
       <p class="copyright"> © SfGZ | IAD19 | Dominique Willi </p>
     </div>
-
   </div>
+
   <!-- page content end -->
 </body>
 

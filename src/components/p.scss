@@ -6,6 +6,8 @@ p {
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 0.8rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
 
 
   @include media(m) {
@@ -16,6 +18,9 @@ p {
   @include media(l) {
     font-size: 18px;
     font-weight: 400;
+    margin-left: 0;
+    margin-right: 0;
+
   }
 }
 
@@ -36,5 +41,5 @@ p.klein {
     font-size: 17px;
     font-weight: 400;
   }
-  
+
 }
