@@ -1,5 +1,7 @@
 // Footer
 
+
+
 .footer {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
@@ -14,21 +16,32 @@
     align-content: center;
     text-align: center;
     background-color: $lightgrey;
-    @include media(m) {
-
+    @include media(l) {
+      grid-column: 1 / 15;
+      grid-row: 1 / 2;
+      height: 6rem;
+      align-content: center;
+      text-align: center;
+      background-color: $lightgrey;
     }
   }
 
   .footer-2 {
     grid-column: 1 / 15;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
     height: 6rem;
     display: flex;
     align-content: center;
     text-align: center;
     background-color: $lightgrey;
-    @include media(m) {
-
+    @include media(l) {
+      grid-column: 1 / 15;
+      grid-row: 2 / 3;
+      height: 6rem;
+      display: flex;
+      align-content: center;
+      text-align: center;
+      background-color: $lightgrey;
     }
   }
 
@@ -37,8 +50,11 @@
     grid-row: 3 / 4;
     height: 2rem;
     background-color: $anthrazit;
-    @include media(m) {
-
+    @include media(l) {
+      grid-column: 1 / 15;
+      grid-row: 3 / 4;
+      height: 2rem;
+      background-color: $anthrazit;
     }
   }
 
@@ -57,6 +73,13 @@
   }
   /* column */
 
+.footer-container--nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  background-color: $lightgrey;
+}
 
   .footer__inner {
     overflow-x: auto;

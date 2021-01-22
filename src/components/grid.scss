@@ -329,9 +329,11 @@ div[class^="card-"] {
 .column-15-covid {
   grid-column: 2 / 14;
   grid-row: 9 / 10;
+  margin-top: 0;
   @include media(l) {
     grid-column: 1 / 8;
     grid-row: 4 / 5;
+    margin-top: 0.6rem;
   }
 }
 
