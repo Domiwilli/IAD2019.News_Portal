@@ -14,19 +14,30 @@
 </div>
 <div class="headeroben">
   <div class="container container--nav">
-  <div class="grid-14-rubrik">
-    <div class="column-1-rubrik"></div>
-    <div class="column-2-rubrik">
-  <img class="Logo" src="./assets/images/Logo.svg" alt="NEWWWS" />
-  <img class="headerwetter" src="./assets/images/weather_cs.svg" alt="Wetter" />
-  <div class="headerwettertext"> 5° Bewölkt</div>
-  <div class="login"> Login </div>
-  <div class="dot"></div>
-  </nav>
-</div>
-</div>
-</div>
-<div class="column-3-rubrik"></div>
+    <div class="grid-14-rubrik">
+      <div class="column-1-rubrik"></div>
+      <div class="column-2-rubrik">
+        <div class="head-top">
+          <div class="head-top__left">
+            <img class="Newwws" src="./assets/images/Logo.svg" alt="NEWWWS" />
+            <img class="wolke" src="./assets/images/weather_cs.svg" alt="Wetter" />
+            <div id="mobile-text">
+              <div class="wolke_text"> 5°</div>
+            </div>
+            <div id="desktop-text">
+              <div class="wolke_text"> 5° Bewölkt</div>
+            </div>
+          </div>
+          <div class="head-top__right">
+            <div class="Account"> Login </div>
+            <img class="boelleli" src="./assets/images/profile.svg" alt="Profile">
+          </div>
+        </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="column-3-rubrik"></div>
 </div>
 
 <div class="header">
@@ -73,9 +84,9 @@
           <h2> Das Zusammenspiel von Licht und Schatten beim Abbilden von Bauwerken </h2>
         </div>
         <div id="desktop-text">
-        <h2> Das Zusammenspiel von Licht und Schatten beim Abbilden von Bauwerken </h2>
-        <p> Um den einzigartigen Zauber von Bauwerken auf Ihren Bildern zu verewigen, spielen Blickwinkel, Perspektiven und Ausschnitte eine grosse Rolle. Auch technisch können Sie, mit der richtigen Kameraeinstellung, vieles herausholen. </p>
-</div>
+          <h2> Das Zusammenspiel von Licht und Schatten beim Abbilden von Bauwerken </h2>
+          <p> Um den einzigartigen Zauber von Bauwerken auf Ihren Bildern zu verewigen, spielen Blickwinkel, Perspektiven und Ausschnitte eine grosse Rolle. Auch technisch können Sie, mit der richtigen Kameraeinstellung, vieles herausholen. </p>
+        </div>
         <div class="like__wrapper">
           <div class="like__erscheinung"><strong>Muster Autor</strong> vor 3h</div>
           <div class="like__button">
@@ -103,10 +114,12 @@
         </div>
 
 
-
-        <!-- Trennlinie -->
-        <hr class="basic" />
-
+        <div id="mobile-text">
+        </div>
+        <div id="desktop-text">
+          <!-- Trennlinie -->
+          <hr class="basic" />
+        </div>
         <!-- News 3 – Klein -->
         <div class="teaser">
           <div class="teaser__image">
@@ -151,7 +164,7 @@
     <div class="grid-14-covid">
 
 
-      <div class="column-1-covid">1</div>
+      <div class="column-1-covid"></div>
 
       <!-- Covid-19 1 – Klein -->
       <div class="column-2-covid column--line-right-small">
@@ -237,13 +250,18 @@
           </div>
         </div>
       </div>
-      <div class="column-6-covid">6</div>
+      <div class="column-6-covid"></div>
       <div class="column-7-covid"></div>
       <div class="column-8-covid">
-        <hr class="basic" />
+        <div id="mobile-text">
+        </div>
+        <div id="desktop-text">
+          <!-- Trennlinie -->
+          <hr class="basic" />
+        </div>
       </div>
       <div class="column-9-covid"></div>
-      <div class="column-10-covid">10</div>
+      <div class="column-10-covid"></div>
 
 
       <!-- Covid-19 6 – Klein -->
@@ -289,32 +307,33 @@
             </div>
           </div>
         </div>
-</div>
-        <!-- Covid-19 8 – Gross -->
-        <div class="column-13-covid column--line-left-big">
-          <img src="./assets/images/02_Covid/Covid_5.jpg" alt="Covid-19" />
-          <h3> Corona Hotspot </h3>
-          <div id="mobile-text">
-            <h2> Warum hat die Westschweiz trotz strengeren Regeln so viele Infektionen? </h2>
-          </div>
-          <div id="desktop-text">
+      </div>
+      <!-- Covid-19 8 – Gross -->
+      <div class="column-13-covid column--line-left-big">
+        <img src="./assets/images/02_Covid/Covid_5.jpg" alt="Covid-19" />
+        <h3> Corona Hotspot </h3>
+        <div id="mobile-text">
           <h2> Warum hat die Westschweiz trotz strengeren Regeln so viele Infektionen? </h2>
-          <p> Die Schweiz, die für ihr Management der ersten Welle von Covid-19 international viel Lob erhalten hat, gilt in der aktuellen Corona-Pandemie als einer der Hotspots in Europa. Dies könnte Auswirkungen auf das Image der Schweiz im Ausland haben. </p>
-</div>
-          <div class="like__wrapper">
-            <div class="like__erscheinung"><strong>Muster Autor</strong> vor 3h</div>
-            <div class="like__button">
-              <div component="like" src="./assets/images/Icon_like.svg" start="105"> </div>
-            </div>
+        </div>
+        <div id="desktop-text">
+          <h2> Warum hat die Westschweiz trotz strengeren Regeln so viele Infektionen? </h2>
+          <p> Die Schweiz, die für ihr Management der ersten Welle von Covid-19 international viel Lob erhalten hat, gilt in der aktuellen Corona-Pandemie als einer der Hotspots in Europa. Dies könnte Auswirkungen auf das Image der Schweiz im Ausland
+            haben. </p>
+        </div>
+        <div class="like__wrapper">
+          <div class="like__erscheinung"><strong>Muster Autor</strong> vor 3h</div>
+          <div class="like__button">
+            <div component="like" src="./assets/images/Icon_like.svg" start="105"> </div>
           </div>
         </div>
-        <div class="column-14-covid">14</div>
-        <div class="column-15-covid">
-          <img src="./assets/images/02_Covid/Werbung_Nikon.jpg" alt="Adobe" /></div>
       </div>
+      <div class="column-14-covid"></div>
+      <div class="column-15-covid">
+        <img src="./assets/images/02_Covid/Werbung_Nikon.jpg" alt="Adobe" /></div>
+    </div>
 
-      <div class="grid-14-between">
-        <div class="row-1-between"></div>
+    <div class="grid-14-between">
+      <div class="row-1-between"></div>
       <div class="row-2-between">
         <hr />
         <h4> Design </h4>
@@ -327,7 +346,7 @@
     <div class="grid-14-design">
 
 
-      <div class="column-1-design">1</div>
+      <div class="column-1-design"></div>
 
       <!-- Design 1 – Gross -->
       <div class="column-2-design column--line-right-big">
@@ -358,32 +377,31 @@
               </div>
             </div>
 
-
-            <!-- Trennlinie -->
-            <hr class="basic">
             <div id="mobile-text">
             </div>
             <div id="desktop-text">
-            <!-- Design 3 – Klein – ohne Bild -->
-            <h3 class="klein"> WEBDESIGN </h3>
-            <h2 class="klein"> UI/UX-Design wird immer wichtiger – geplant sind neue Studien&shy;gänge </h2>
-            <div class="like__wrapper">
-              <div class="like__erscheinung"><strong>Muster Autor</strong> vor 3h</div>
-              <div class="like__button">
-                <div component="like" src="./assets/images/Icon_like.svg" start="61"> </div>
+              <!-- Trennlinie -->
+              <hr class="basic">
+              <!-- Design 3 – Klein – ohne Bild -->
+              <h3 class="klein"> WEBDESIGN </h3>
+              <h2 class="klein"> UI/UX-Design wird immer wichtiger – geplant sind neue Studien&shy;gänge </h2>
+              <div class="like__wrapper">
+                <div class="like__erscheinung"><strong>Muster Autor</strong> vor 3h</div>
+                <div class="like__button">
+                  <div component="like" src="./assets/images/Icon_like.svg" start="61"> </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-</div>
       <!-- Design 4 – Klein -->
       <div class="column-4-design">
         <div id="mobile-text">
-        <div class="teaser">
-          <div class="teaser__image">
-            <img src="./assets/images/03_Design/Kolumne_Mobile.jpg" alt="Kolumne" />
-          </div>
+          <div class="teaser">
+            <div class="teaser__image">
+              <img src="./assets/images/03_Design/Kolumne_Mobile.jpg" alt="Kolumne" />
+            </div>
             <h4 class="kolumne"> KOLUMNE </h4>
             <div class="teaser__text">
               <h3 class="kolumne"> SARAH MEIER </h3>
@@ -398,12 +416,12 @@
           </div>
         </div>
 
-          <div id="desktop-text">
-            <div class="teaser">
-              <div class="teaser__image">
-                <img src="./assets/images/03_Design/Kolumne.jpg" alt="Kolumne" />
-              </div>
-          <h4 class="kolumne"> KOLUMNE </h4>
+        <div id="desktop-text">
+          <div class="teaser">
+            <div class="teaser__image">
+              <img src="./assets/images/03_Design/Kolumne.jpg" alt="Kolumne" />
+            </div>
+            <h4 class="kolumne"> KOLUMNE </h4>
             <h3 class="kolumne"> SARAH MEIER </h3>
             <h2 class="kolumne"> Ich folge auf Social Media keinen Berufs&shy;kolleg*innen mehr, die überwiegend ihre Weltsicht kundtun. </h2>
             <p class="kolumne"> Weshalb Anprangern in Social Media ihrer Meinung nach nichts mit politischem Engagement zu tun hat. </p>
@@ -418,14 +436,17 @@
       </div>
 
 
-      <div class="column-5-design">5</div>
+      <div class="column-5-design"></div>
       <!-- Trennlinie -->
-      <div class="column-6-design">6</div>
+      <div class="column-6-design"></div>
       <div class="column-7-design">
+        <div id="mobile-text">
+          </div>
+          <div id="desktop-text">
         <hr class="basic" />
-      </div>
-      <div class="column-8-design">8</div>
-      <div class="column-9-design">9</div>
+      </div></div>
+      <div class="column-8-design"></div>
+      <div class="column-9-design"></div>
       <div class="column-10-design">
         <div id="mobile-text">
           <h3 class="wetter"> Das Wetter von Heute</h3>
@@ -434,11 +455,11 @@
           </h2>
         </div>
         <div id="desktop-text">
-        <h3 class="wetter"> Das Wetter von Heute</h3>
-        <h2 class="wetter"> in Baden </h2>
-        <img class="wetter" src="./assets/images/weather_cs.svg" alt="Wetter" />
-        <h2 class="wetter">5° Bewölkt</h2>
-      </div>
+          <h3 class="wetter"> Das Wetter von Heute</h3>
+          <h2 class="wetter"> in Baden </h2>
+          <img class="wetter" src="./assets/images/weather_cs.svg" alt="Wetter" />
+          <h2 class="wetter">5° Bewölkt</h2>
+        </div>
       </div>
       <div class="column-11-design">
         <h3 class="wetter"> Wettbewerb</h3>
@@ -448,7 +469,7 @@
         <h3 class="wetter"> Newsletter</h3>
         <h2 class="wetter"> Mit dem NEWWWSletter <br> immer auf dem <br> neusten Stand sein! </h2>
       </div>
-      <div class="column-13-design">13</div>
+      <div class="column-13-design"></div>
 
       <div class="rubrik">
         <hr />
@@ -458,7 +479,7 @@
 
     <!-- Meistgelesen -->
     <div class="grid-14-meist">
-      <div class="column-1-meist">1</div>
+      <div class="column-1-meist"></div>
 
       <!-- Meistgelesen 1 – Klein -->
       <div class="column-2-meist column--line-right-small">
@@ -468,9 +489,9 @@
           <h2> Firmware-Updates statten Nikon-Z-Kame&shy;ras mit neuen Video-Funktionen aus </h2>
         </div>
         <div id="desktop-text">
-        <h2 class="klein"> Firmware-Updates statten Nikon-Z-Kame&shy;ras mit neuen Video-Funktionen aus </h2>
-        <p class="klein"> Die Firmware-Updates ermöglichen Aufzeich&shy;nung hochwertiger, mit der Z7 oder Z6 aufgenommener Videos in ProRes-RAW und Black&shy;magic-RAW. Videos in 4K/UHD oder Full-HD-RAW können auf
-          externem Rekorder aufge&shy;zeichnet werden.</p>
+          <h2 class="klein"> Firmware-Updates statten Nikon-Z-Kame&shy;ras mit neuen Video-Funktionen aus </h2>
+          <p class="klein"> Die Firmware-Updates ermöglichen Aufzeich&shy;nung hochwertiger, mit der Z7 oder Z6 aufgenommener Videos in ProRes-RAW und Black&shy;magic-RAW. Videos in 4K/UHD oder Full-HD-RAW können auf
+            externem Rekorder aufge&shy;zeichnet werden.</p>
         </div>
         <div class="like__wrapper">
           <div class="like__erscheinung"><strong>Stefan Maier</strong> vor 7d</div>
@@ -479,11 +500,11 @@
           </div>
         </div>
         <div id="mobile-text">
-        <!-- Trennlinie -->
-        <hr class="basic">
-  </div>
-  <div id="desktop-text">
-  </div>
+          <!-- Trennlinie -->
+          <hr class="basic">
+        </div>
+        <div id="desktop-text">
+        </div>
       </div>
 
       <!-- Meistgelesen 2 – Klein – ohne Bild -->
@@ -574,27 +595,25 @@
       </div>
     </div>
 
-
+  </div>
 
   <div class="footer">
-    <div class="footer-1">
-      <img class="footer" src="./assets/images/Logo_pos.svg" alt="NEWWWS" />
-    </div>
-    <div class="footer-2">
-      <nav class="footer__inner">
-        <a class="footer__item" href="#a">Impressum</a>
-        <a class="footer__item" href="#b">Kontakt</a>
-        <a class="footer__item" href="#c">AGB</a>
-        <a class="footer__item" href="#d">Datenschutz</a>
-      </nav>
+    <div class="grid-14-footer">
+      <div class="column-1-footer">
+        <img class="footer" src="./assets/images/Logo_pos.svg" alt="NEWWWS" />
+      </div>
+      <div class="column-2-footer">
+        <a class="footer__item" href="#l">Impressum</a>
+        <a class="footer__item" href="#m">Kontakt</a>
+        <a class="footer__item" href="#n">AGB</a>
+        <a class="footer__item" href="#o">Datenschutz</a>
+      </div>
+      <div class="column-3-footer">
+        <p class="copyright"> © SfGZ | IAD19 | Dominique Willi </p>
+      </div>
     </div>
 
-    <div class="footer-3">
-      <p class="copyright"> © SfGZ | IAD19 | Dominique Willi </p>
-    </div>
-  </div>
-</div>
-  <!-- page content end -->
+    <!-- page content end -->
 </body>
 
 </html>

@@ -1,41 +1,48 @@
 /* Basic styling */
-
-
 a {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
   border-bottom: 2px solid transparent;
+  @include media(l) {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+  }
 }
 
 a.nav__item--active,
 a:hover {
   color: white;
 }
+
 a:hover {
   border-color: $blue;
 }
+
 a.nav__item--active {
   border-color: $blue;
 }
+
 a:visited {
   color: white;
 }
 /* column */
-
-
 /* compensate for header */
 .container--first-content {
   margin-top: 1rem;
 }
-
 /* header doesn't scroll */
 .header {
   position: sticky;
-  top: calc(8% + 1px); // space top
+  top: calc(3rem + 1px); // space top
   width: 100%;
   background-color: $anthrazit;
   height: 3rem;
@@ -43,15 +50,14 @@ a:visited {
   margin-bottom: 0;
   @include media(l) {
     position: sticky;
-    top: calc(8% + 1px); // space top
+    top: calc(3rem + 1px); // space top
     width: 100%;
     background-color: $anthrazit;
     height: 3rem;
     z-index: 99;
     margin-bottom: 2rem;
-    }
+  }
 }
-
 /* center the navigation in height */
 .container--nav {
   height: 100%;
@@ -59,13 +65,11 @@ a:visited {
   align-items: center;
   margin: 0 auto;
 }
-
 /* whole heigth */
 .nav {
   position: relative;
   width: 100%;
 }
-
 /* the gradient right */
 .nav:after {
   content: "";
@@ -74,25 +78,22 @@ a:visited {
   position: absolute;
   top: 0;
   right: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(43,46,52,0) 0%,
-    rgba(43,46,52,0) 100%
-  );
+  background: linear-gradient(90deg, rgba(43,46,52,0) 0%, rgba(43,46,52,1));
 }
-
 /* scroll-area */
 .nav__inner {
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
   width: 100%;
-  scrollbar-width: none; /* no-scrollbar: firefox */
-}
-.nav__inner::-webkit-scrollbar {
-  display: none; /* no-scrollbar: Safari and Chrome */
+  scrollbar-width: none;
+  /* no-scrollbar: firefox */
 }
 
+.nav__inner::-webkit-scrollbar {
+  display: none;
+  /* no-scrollbar: Safari and Chrome */
+}
 /* at the end of the list we add space*/
 .nav__inner:after {
   display: block;
@@ -102,17 +103,17 @@ a:visited {
   flex-shrink: 0;
   flex-basis: 1.25em;
 }
-
 /* don't wrap within the items */
 .nav__item {
   white-space: nowrap;
 }
-
 /* space between the items */
 .nav__item + .nav__item {
-  margin-left: 3em;
+  margin-left: 1.5em;
+  @include media(l) {
+    margin-left: 3em;
+  }
 }
-
 /* Logo, weather & profile */
 .headeroben {
   position: sticky;
@@ -123,46 +124,119 @@ a:visited {
   background-color: $anthrazit;
   z-index: 99;
   border-bottom: white 1px solid; // white line otherwise you see the background
+  top: 0;
 }
 
-.headeroben-container--nav {
-  height: 100%;
+.head-top {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.head-top__left {
   display: flex;
   align-items: center;
-  margin: 0 auto;
 }
 
-.dot {
-  display: flex;
-  float: right;
-  height: 1.4rem;
-  width: 1.4rem;
-  background-color: $lightgrey;
-  border-radius: 50%;
-  margin-top: 1.5rem;
-  margin-right: 0.5rem;
+.header-top__wetter {
+  padding-left: 1rem;
 }
 
-.login {
+.head-top__right {
   display: flex;
-  float: right;
+  align-items: center;
+}
+
+.Newwws {
+  width: 50%;
+  margin-bottom: 0;
+  @include media(l) {
+    width: 25%;
+    margin-bottom: 0;
+  }
+}
+
+.wolke {
+  width: 15%;
+  padding-left: 0.5rem;
+  margin-bottom: 0;
+  @include media(l) {
+    width: 8%;
+    padding-left: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.wolke_text {
+  font-size: 12px;
   font-weight: 400;
-  font-size: 13px;
-  text-align: right;
-  letter-spacing: 0.1em;
   color: white;
-  margin-top: 1.7rem;
+  padding-left: 0.5rem;
+  line-height: 3.5;
+  @include media(l) {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    padding-left: 1rem;
+    line-height: 3.5;
+  }
 }
 
-.headerwettertext {
-  display: flex;
-  float: left;
+.Account {
+  font-size: 12px;
   font-weight: 400;
-  font-size: 13px;
-  text-align: left;
-  letter-spacing: 0.1em;
   color: white;
-  float: left;
-  margin-top: 1.7rem;
-  margin-left: 0.5rem;
+  line-height: 3.5;
+  padding-right: 0.2rem;
+  @include media(l) {}
 }
+
+.boelleli {
+  width: 40px;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  @include media(l) {
+    width: 25%;
+    margin-bottom: 0;
+  }
+}
+// .headeroben-container--nav {
+//   height: 100%;
+//   display: flex;
+//   align-items: center;
+//   margin: 0 auto;
+// }
+// .dot {
+//   display: flex;
+//   float: right;
+//   height: 1.4rem;
+//   width: 1.4rem;
+//   background-color: $lightgrey;
+//   border-radius: 50%;
+//   margin-top: 1.5rem;
+//   margin-right: 0.5rem;
+// }
+// .login {
+//   display: flex;
+//   float: right;
+//   font-weight: 400;
+//   font-size: 13px;
+//   text-align: right;
+//   letter-spacing: 0.1em;
+//   color: white;
+//   margin-top: 1.7rem;
+// }
+// .headerwettertext {
+//   display: flex;
+//   float: left;
+//   font-weight: 400;
+//   font-size: 13px;
+//   text-align: left;
+//   letter-spacing: 0.1em;
+//   color: white;
+//   float: left;
+//   margin-top: 1.7rem;
+//   margin-left: 0.5rem;
+// }
